@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Parties · The Laalten · लालटेन</title>
+<meta name="description" content="Sample group-booking page for The Laalten, a rooftop resto-cafe in Kamla Nagar, Delhi.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#151a3c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2710%27 fill=%27%23151a3c%27/%3E%3Cpath d=%27M20 28C20 6 44 6 44 28%27 fill=%27none%27 stroke=%27%23e8472f%27 stroke-width=%274%27/%3E%3Cpath d=%27M25 24C16 31 16 43 25 50L39 50C48 43 48 31 39 24Z%27 fill=%27%23ffe9ad%27/%3E%3Cpath d=%27M32 32C37 39 36 46 32 48C28 46 27 39 32 32Z%27 fill=%27%23ff8a2a%27/%3E%3Cpath d=%27M16 50L48 50L45 59L19 59ZM23 20h18v6h-18z%27 fill=%27%23e8472f%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wdth,wght@75..125,400..800&family=Anek+Latin:wdth,wght@75..125,400..800&family=Eczar:wght@500..800&family=Yatra+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="night inner" data-page="parties">
+<main class="page">
+  <div class="wrap party">
+    <header class="title">
+      <h1 class="d">Take the roof <span lang="hi">पूरी छत आपकी</span></h1>
+      <p>Birthdays, freshers, farewells, society nights. Slide to your headcount and watch the roof fill up.</p>
+    </header>
+
+    <section class="planbox" aria-label="How full the roof gets">
+      <p class="count"><output class="d" id="n">30</output><span class="lab">of you · <b id="hint">half the roof</b></span></p>
+      <div id="plan"></div>
+      <input type="range" id="size" min="10" max="50" step="1" value="30" aria-label="How many people">
+      <div class="ends lab"><span>10</span><span>50</span></div>
+      <p class="credit">A drawing to give you the idea, not the exact table layout.</p>
+    </section>
+
+    <section class="sec">
+      <form class="slip paper" id="slip">
+        <p class="lab">Your booking, in one line</p>
+        <p class="line">We're <b id="s-n">30</b> people, coming on
+          <label class="in"><span class="sr">Date</span><input type="date" id="date"></label>
+          for a
+          <label class="in"><span class="sr">Occasion</span><select id="occ"><option>birthday</option><option>freshers party</option><option>farewell</option><option>society night</option><option>get-together</option><option>office party</option></select></label>.
+        </p>
+        <button class="sign" type="submit">Send this on WhatsApp</button>
+        <p class="fine">Opens WhatsApp with this line written out. Nothing is sent until you press send.</p>
+      </form>
+    </section>
+
+    <section class="sec know">
+      <header class="sh"><p class="lab">Amit · Google review · 4 stars</p><h2 class="d">“Amazing place for a get together party for 30-50 people.”</h2><div class="orn"><i></i></div></header>
+      <ol class="tri facts">
+        <li><span class="num" lang="hi">१</span><b>Open till 1 am</b><span class="t">Every day of the week.</span></li>
+        <li><span class="num" lang="hi">२</span><b>No cover charge</b><span class="t">You pay for what you order.</span></li>
+        <li><span class="num" lang="hi">३</span><b>Whole menu, and the bar</b><span class="t">From tandoor platters to sizzlers.</span></li>
+      </ol>
+    </section>
+  </div>
+</main>
+
+<script src="js/scene.js"></script>
+<script src="js/site.js"></script>
+<script src="js/parties.js"></script>
+</body>
+</html>
